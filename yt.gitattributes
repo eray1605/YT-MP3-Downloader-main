@@ -6,5 +6,11 @@
 *.css linguist-language=Text
 *.js linguist-language=Text
 
+# TeX-Dateien ignorieren
+*.tex linguist-language=Text
+
+# HTML-Dateien ignorieren
+*.html linguist-language=Text
+
 # Ignoriere externe Bibliotheken im 'vendor'-Ordner
 /vendor/* linguist-vendored
