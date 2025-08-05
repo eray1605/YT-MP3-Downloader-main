@@ -1,0 +1,10 @@
+# Ignoriere Konfigurationsdateien und generierte Dateien
+*.json linguist-language=YAML
+*.xml linguist-language=XML
+
+# Ignoriere Frontend-Dateien, wenn es sich um ein Python-Backend handelt
+*.css linguist-language=Text
+*.js linguist-language=Text
+
+# Ignoriere externe Bibliotheken im 'vendor'-Ordner
+/vendor/* linguist-vendored
