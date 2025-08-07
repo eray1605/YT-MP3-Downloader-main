@@ -14,7 +14,7 @@ A simple desktop application built with Python and Tkinter to search for and dow
 
 - Song Search: Search for songs or videos directly by name.
 
-- Results List: Displays the top search results with titles and thumbnails.
+- Results List: Displays the top 3 search results with titles and thumbnails.
 
 - Easy Selection: Click on a search result to select it for download.
 
