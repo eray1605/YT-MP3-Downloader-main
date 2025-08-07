@@ -1,16 +1,17 @@
-# Ignoriere Konfigurationsdateien und generierte Dateien
-*.json linguist-language=YAML
-*.xml linguist-language=XML
+# Ignoriert automatisch generierte Konfigurationsdateien und Binärdateien von PyInstaller
+# Wichtig: PyInstaller TOC-Dateien, da sie fälschlicherweise als TeX erkannt werden
+*.toc linguist-generated=true
+*.pyz linguist-generated=true
+*.spec linguist-generated=true
+*.pyz.toc linguist-generated=true
 
-# Ignoriere Frontend-Dateien, wenn es sich um ein Python-Backend handelt
-*.css linguist-language=Text
-*.js linguist-language=Text
+# Ignoriert den generierten 'build'-Ordner
+/build/* linguist-generated=true
 
-# TeX-Dateien ignorieren
-*.tex linguist-language=Text
+# Ignoriert den generierten 'dist'-Ordner
+/dist/* linguist-generated=true
 
-# HTML-Dateien ignorieren
-*.html linguist-language=Text
-
-# Ignoriere externe Bibliotheken im 'vendor'-Ordner
-/vendor/* linguist-vendored
+# Weitere Dateien, die ignoriert werden sollen, falls sie fälschlicherweise erkannt werden
+*.html linguist-generated=true
+*.css linguist-generated=true
+*.js linguist-generated=true
